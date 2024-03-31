@@ -4,24 +4,18 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Card from './Card'
 import Marquee from "react-fast-marquee";
+import Card1 from './Card1'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <Marquee className='mt-3 bg-yellow-100 p-3' pauseOnHover direction='left' >
+    
 
-      <Card />
-      <Card />
-      <Card />
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
+      <Card1/>
       
-    </Marquee>
+   
    
     </>
   )

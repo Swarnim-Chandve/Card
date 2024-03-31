@@ -6,7 +6,7 @@ import { FaInstagram } from "react-icons/fa6";
 
 const Card = () => {
   return (
-    <div class=" w-max  h-max  flex bg-white border border-black m-5 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div class=" w-max  h-max  flex bg-white border border-black m-5  rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <div  className="p-2">
         <img
           class=" ml-2 rounded-full mt-8 w-20"
