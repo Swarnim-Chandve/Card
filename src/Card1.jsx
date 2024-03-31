@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import './Card1.css';
-import './Card1.js'; // Assuming this file contains your animation function
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaSquareInstagram } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
+ // Assuming this file contains your animation function
 
-function Card1() {
+function Card1(props) {
   const [showSocial, setShowSocial] = useState(false);
 
   const toggleSocial = () => {
@@ -20,8 +23,8 @@ function Card1() {
           />
         </div>
 
-        <h3 className="card__name">Mia Miranda</h3>
-        <span className="card__profession">Interpreter</span>
+        <h3 className="card__name">{props.name}</h3>
+        <span className="card__profession">{props.role}</span>
 
         <div className={`card__social ${showSocial ? 'animation' : ''}`} id="card-social">
           <div className="card__social-control">
@@ -29,19 +32,19 @@ function Card1() {
               <span className="ri--add-line"></span>
             </div>
 
-            <span className="card__social-text">My social networks</span>
+            <span className="card__social-text">Social Networks</span>
 
             <ul className="card__social-list">
-              <a href="https://www.facebook.com/" target="_blank" className="card__social-link">
-                <i className="ri-facebook-line"></i>
+              <a href={props.Linkedin} target="_blank" className="card__social-link">
+              <FaLinkedin  />
               </a>
 
-              <a href="https://www.instagram.com/" target="_blank" className="card__social-link">
-                <i className="ri-instagram-line"></i>
+              <a href={props.Instagram} target="_blank" className="card__social-link">
+              <FaSquareInstagram />
               </a>
 
-              <a href="https://www.twitter.com/" target="_blank" className="card__social-link">
-              <i class="ri-twitter-x-line"></i>
+              <a href={props.Twitter} target="_blank" className="card__social-link">
+              <FaSquareXTwitter />
               </a>
             </ul>
           </div>
