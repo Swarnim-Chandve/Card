@@ -3,7 +3,7 @@ import './Card1.css';
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
- // Assuming this file contains your animation function
+
 
 function Card1(props) {
   const [showSocial, setShowSocial] = useState(false);

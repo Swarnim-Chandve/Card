@@ -173,12 +173,12 @@ img {
   mask-size: 100% 100%;
 }
 
-/* Rotate social */
+
 .animation .card__social-control {
   transform: rotate(-135deg);
 }
 
-/* Up animation */
+
 .card__social.animation {
   animation: up-animation 1s ease-in-out forwards;
 }
