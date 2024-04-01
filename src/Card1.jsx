@@ -13,18 +13,20 @@ function Card1(props) {
   };
 
   return (
-    <div className="container">
-      <div className="card">
-        <div className="card__border">
+    <div className="container ">
+      <div className="card flex  w-max ">
+        <div className="card__border rounded-full p-1 mt-5 mr-10 ">
           <img
             src="https://i.pinimg.com/736x/ba/92/7f/ba927ff34cd961ce2c184d47e8ead9f6.jpg"
             alt="card image"
             className="card__img"
           />
         </div>
+        <div className='mt-12 '>
+          <h3 className="card__name text-xl">{props.name}</h3>
+          <span className="card__profession text-sm">{props.role}</span>
 
-        <h3 className="card__name">{props.name}</h3>
-        <span className="card__profession">{props.role}</span>
+        </div>
 
         <div className={`card__social ${showSocial ? 'animation' : ''}`} id="card-social">
           <div className="card__social-control">
@@ -32,7 +34,7 @@ function Card1(props) {
               <span className="ri--add-line"></span>
             </div>
 
-            <span className="card__social-text">Social Networks</span>
+            <span className="card__social-text text-sm font-semibold ">Social Networks</span>
 
             <ul className="card__social-list">
               <a href={props.Linkedin} target="_blank" className="card__social-link">

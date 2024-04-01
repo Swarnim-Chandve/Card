@@ -12,7 +12,7 @@ function App() {
     <>
     
 
-      <Card1 name="Swarnim" role="Blockchain Dev" />
+      <Card1 name="Swarnim Kailash Chandve" role="Blockchain Dev" />
       
    
    
